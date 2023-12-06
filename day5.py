@@ -4,6 +4,15 @@ class Solution:
         r = [i for i in l if i != item]
         return r
 
+    def reverse_map(self, m, rml) -> int:
+        for sms in rml:
+            ch = False
+            for sm in sms:
+                if m >= int(sm[0]) and m <= int(sm[0]) + int(sm[2]) - 1 and not ch:
+                    m = m - int(sm[0]) + int(sm[1])
+                    ch = True
+        return m
+
     def solve(self) -> int:
         file = open('input.txt', 'r')
         read = file.readlines()
@@ -23,27 +32,19 @@ class Solution:
             if not sn:
                 sml.append(read[i].replace("\n", "").split(" "))
         ml.append(sml)
+        rml = ml[::-1]
 
-        ns = []
-        se = 0
-        for i in range(len(ss)):
-            if i%2 == 0:
-                se = int(ss[i])
-            else:
-                for j in range(int(ss[i])):
-                    ns.append(se+j)
-
-        m = float("inf")
-        for s in ns:
-            c = int(s)
-            for sms in ml:
-                ch = False
-                for sm in sms:
-                    if c >= int(sm[1]) and c <= int(sm[1])+int(sm[2])-1 and not ch:
-                        c = c - int(sm[1])+int(sm[0])
-                        ch = True
-            m = min(m, c)
-        return m
+        mi = 0
+        while True:
+            rm = self.reverse_map(mi, rml)
+            se = 0
+            for i in range(len(ss)):
+                if i % 2 == 0:
+                    se = int(ss[i])
+                else:
+                    if rm >= se and rm < se + int(ss[i]):
+                        return mi
+            mi += 1
 
 s = Solution()
 print(s.solve())
