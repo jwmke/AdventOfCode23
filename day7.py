@@ -1,25 +1,37 @@
 class Solution:
     def hand_type(self, h) -> int:
         d = {}
+        jc = 0
         for c in h:
             if not c in d:
                 d[c] = 0
+            if c == "J":
+                jc += 1
             d[c]+=1
+
+        mv = max(d.values())
+        tk = [k for k, va in d.items() if va == mv]
 
         v = list(d.values())
         v.sort()
         v = v[::-1]
-        if v[0] == 5:
+        vn = v[0]
+        if "J" in tk and jc != 5:
+            vn = jc + v[1]
+        else:
+            vn += jc
+
+        if vn >= 5:
             return 7
-        elif v[0] == 4:
+        elif vn == 4:
             return 6
-        elif v[0] == 3 and v[1] == 2:
+        elif vn == 3 and v[1] == 2:
             return 5
-        elif v[0] == 3:
+        elif vn == 3:
             return 4
-        elif v[0] == 2 and v[1] == 2:
+        elif vn == 2 and v[1] == 2:
             return 3
-        elif v[0] == 2:
+        elif vn == 2:
             return 2
         else:
             return 1
@@ -49,7 +61,7 @@ class Solution:
         read = file.readlines()
         t = 0
         arr = []
-        cd = {'A': 14, 'K': 13, 'Q': 12, 'J': 11, 'T': 10}
+        cd = {'A': 14, 'K': 13, 'Q': 12, 'J': 1, 'T': 10}
         for l in read:
             h, b = l.replace("\n", "").split(" ")
             arr.append((h, b))
