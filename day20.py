@@ -1,4 +1,9 @@
+import math
+
+
 class Solution:
+    def lcm(self, a, b) -> int:
+        return (a * b) // math.gcd(a, b)
     def solve(self) -> int:
         file = open('input.txt', 'r')
         read = file.readlines()
@@ -20,16 +25,13 @@ class Solution:
                     td[con][2][g] = 0
 
         q = []
-        tlp, thp = 0, 0
-
-        for _ in range(1000):
-            tlp+=1
+        for ci in range(int("inf")):
             for m in bn:
                 q.append((m, "broadcaster", 0))
-                tlp += 1
             while q:
                 mn, mf, ps = q.pop(0)
-                # print(mf, mn, ps)
+                if mn == "rx" and ps == 0:
+                    return ci
                 if mn in td:
                     mt, mdl, ms = td[mn]
                     nps = 0
@@ -41,10 +43,6 @@ class Solution:
                         td[mn][2] = not td[mn][2]
                         for m in mdl:
                             q.append((m, mn, nps))
-                            if nps == 0:
-                                tlp+=1
-                            else:
-                                thp += 1
                     elif mt == "con":
                         td[mn][2][mf] = ps
                         for ds in td[mn][2].values():
@@ -52,12 +50,13 @@ class Solution:
                                 nps = 1
                         for m in mdl:
                             q.append((m, mn, nps))
-                            if nps == 0:
-                                tlp += 1
-                            else:
-                                thp += 1
-        # print(tlp, thp)
-        return tlp * thp
+
+        r = 1
+        # binary period representations determined via pen & paper
+        pn = [int("111010110111", 2), int("111010110001", 2), int("111111111011", 2), int("111110100001", 2)]
+        for p in pn:
+            r = self.lcm(r, p)
+        return r
 
 s = Solution()
 print(s.solve())
