@@ -1,3 +1,5 @@
+import copy
+
 class Solution:
     def solve(self) -> int:
         file = open('input.txt', 'r')
@@ -33,10 +35,10 @@ class Solution:
             csd = nsd
             return csd
 
-
         sd = check_supported(sd)
+
         while len(sd) != len(cd):
-            print(len(sd), len(cd))
+            # print(len(sd), len(cd))
             ncd = cd.copy()
             for bc in cd:
                 if bc not in sd:
@@ -48,12 +50,28 @@ class Solution:
             cd = ncd
             sd = check_supported(sd)
 
-        cdi = list(cd.keys())
-        for rs in cd.values():
-            if len(rs) == 1 and min(rs) != fc and min(rs) in cdi:
-                cdi.remove(min(rs))
+        # for d in cd:
+        #     print(d, "->", cd[d])
 
-        return len(cdi)
+        cdi = set()
+        for rs in cd.values():
+            if len(rs) == 1 and min(rs) != fc:
+                cdi.add(min(rs))
+
+        tf = 0
+        for bci in cdi:
+            dfa = [bci]
+            ncd = copy.deepcopy(cd)
+            while dfa:
+                cbc = dfa.pop(0)
+                for bc in ncd:
+                    if cbc in ncd[bc]:
+                        ncd[bc].remove(cbc)
+                        if len(ncd[bc]) == 0:
+                            tf += 1
+                            dfa.append(bc)
+
+        return tf
 
 s = Solution()
 print(s.solve())
