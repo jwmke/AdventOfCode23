@@ -4,7 +4,7 @@ class Solution:
     def solve(self) -> int:
         file = open('input.txt', 'r')
         read = file.readlines()
-        sys.setrecursionlimit(1000)
+        sys.setrecursionlimit(100000)
         g = []
         s, e = None, None
         for i, l in enumerate(read):
