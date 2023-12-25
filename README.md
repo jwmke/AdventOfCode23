@@ -2,8 +2,6 @@
 
 ## 2023
 
----
-
 Finished #1 on [Kohl's](https://corporate.kohls.com/) leaderboard
 
 ![kohls](https://github.com/jwmke/AdventOfCode23/assets/43486503/7eaac02e-f254-4b75-8fdc-f4a9c9277821)
