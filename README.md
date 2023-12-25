@@ -6,7 +6,7 @@ Finished #1 on [Kohl's](https://corporate.kohls.com/) leaderboard
 
 and #3 on [ThePrimeagen's](https://www.youtube.com/@ThePrimeagen/featured) leaderboard
 
-![prime](https://github.com/jwmke/AdventOfCode23/assets/43486503/98f6cd64-f4ef-4bea-845b-4660ed25e792)
+![prime](https://github.com/jwmke/AdventOfCode23/assets/43486503/3b80d1e0-c3ef-4cc5-823d-73d72c4bf192)
 
 Used google/hints on 9 out of the 50 stars:
 
