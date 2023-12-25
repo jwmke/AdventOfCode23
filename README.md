@@ -8,16 +8,34 @@ and #3 on [ThePrimeagen's](https://www.youtube.com/@ThePrimeagen/featured) leade
 
 ![prime](https://github.com/jwmke/AdventOfCode23/assets/43486503/3b80d1e0-c3ef-4cc5-823d-73d72c4bf192)
 
-Used google/hints on 9 out of the 50 stars:
+✅ == Solved independently, ☑️ == Solved with google/hints
 
-* Day 5, p2
-* Day 10, p2
-* Day 12, p1
-* Day 17, p1
-* Day 18, p2
-* Day 20, p2
-* Day 21, p2
-* Day 24, p2
-* Day 25, p1
+| Day | P1 | P2 |
+|-----|----|----|
+| 1   | ✅  | ✅  |
+| 2   | ✅  | ✅  |
+| 3 | ✅  | ✅  |
+| 4 | ✅  | ✅  |
+| 5 | ✅  | ☑️  |
+| 6 | ✅  | ✅  |
+| 7 | ✅  | ✅  |
+| 8 | ✅  | ✅  |
+| 9 | ✅  | ✅  |
+| 10 | ✅  | ☑️  |
+| 11 | ✅  | ✅  |
+| 12 | ☑️  | ✅  |
+| 13 | ✅  | ✅  |
+| 14 | ✅  | ✅  |
+| 15 | ✅  | ✅  |
+| 16 | ✅  | ✅  |
+| 17 | ☑️  | ✅  |
+| 18 | ✅  | ☑️  |
+| 19 | ✅  | ✅  |
+| 20   | ✅  | ☑️  |
+| 21   | ✅  | ☑️  |
+| 22   | ✅  | ✅  |
+| 23 | ✅  | ✅  |
+| 24 | ✅  | ☑️  |
+| 25 | ☑️  | ✅  |
 
-Aiming for no external assistance next year, see you then!
+Aiming for much less assistance next year, see you then!
