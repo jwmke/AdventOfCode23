@@ -8,7 +8,7 @@ and #3 on [ThePrimeagen's](https://www.youtube.com/@ThePrimeagen/featured) leade
 
 ![prime](https://github.com/jwmke/AdventOfCode23/assets/43486503/98f6cd64-f4ef-4bea-845b-4660ed25e792)
 
-Used google/hints on 9 out of 50 stars:
+Used google/hints on 9 out of the 50 stars:
 
 * Day 5, p2
 * Day 10, p2
@@ -20,4 +20,4 @@ Used google/hints on 9 out of 50 stars:
 * Day 24, p2
 * Day 25, p1
 
-Will aim for no external assistance next year. See you then!
+Aiming for no external assistance next year, see you then!
