@@ -1,4 +1,8 @@
-# My Solutions for [Advent of Code](https://adventofcode.com/) 2023 🎄
+# My Solutions for [Advent of Code](https://adventofcode.com/) 🎄
+
+## 2023
+
+---
 
 Finished #1 on [Kohl's](https://corporate.kohls.com/) leaderboard
 
@@ -38,4 +42,4 @@ and #3 on [ThePrimeagen's](https://www.youtube.com/@ThePrimeagen/featured) leade
 | 24 | ✅  | ☑️  |
 | 25 | ☑️  | ✅  |
 
-Aiming for much less assistance next year, see you then!
+Aiming for much less external assistance next year, see you then!
