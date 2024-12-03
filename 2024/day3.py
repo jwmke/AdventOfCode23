@@ -31,7 +31,6 @@ def solve() -> int:
                 if tr[i+fidx].isnumeric():
                     n2 += tr[i+fidx]
                 elif tr[i+fidx]==")":
-                    print(do, n1, n2)
                     if do:
                         t += (int(n1) * int(n2))
                         break
