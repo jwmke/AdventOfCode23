@@ -21,6 +21,40 @@ def solve() -> int:
     #     if s == "S":
     #         return "DONE"
 
+    # def search(y, x, cur, py, px):
+    #     if not (0 <= y < len(m) and 0 <= x < len(m[0])):
+    #         return 0
+            
+    #     c = m[y][x]
+    #     n = get_next(c)
+    #     if n == "DONE":
+    #         return 1
+            
+    #     result = 0
+        
+    #     if py is None and px is None:
+    #         ds = [
+    #             (1, -1), (1, 0), (1, 1),
+    #             (0, -1), (0, 1),          
+    #             (-1, -1), (-1, 0), (-1, 1) 
+    #         ]
+    #     else:
+    #         ds = [(py, px)]
+        
+    #     for dy, dx in ds:
+    #         ny, nx = y + dy, x + dx
+    #         if 0 <= ny < len(m) and 0 <= nx < len(m[0]):
+    #             if m[ny][nx] == n:
+    #                 result += search(ny, nx, cur, dy, dx)
+        
+    #     return result
+    
+    # t = 0
+    # for y in range(len(m)):
+    #     for x in range(len(m[0])):
+    #         if m[y][x] == "X":
+    #             t += search(y, x, 0, None, None)
+
     def search(y, x):
         if not (1 <= y < len(m)-1 and 1 <= x < len(m[0])-1):
             return 0
