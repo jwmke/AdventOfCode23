@@ -2,6 +2,7 @@ import math
 import sys
 import copy
 from collections import defaultdict
+import functools
 
 def solve() -> int:
     sys.setrecursionlimit(200000)
