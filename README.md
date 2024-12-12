@@ -1,7 +1,7 @@
 # My Solutions for [Advent of Code](https://adventofcode.com/) 🎄
 
 
-✅ == Solved independently, ☑️ == Solved with google/hints
+✅ == Solved independently, ☑️ == Solved with hints
 
 | Day | 2023 P1 | 2023 P2 | 2024 P1 | 2024 P2 |
 |-----|----|----|----|----|
@@ -14,8 +14,8 @@
 | 7 | ✅  | ✅  | ✅  | ✅  |
 | 8 | ✅  | ✅  | ✅  | ✅  |
 | 9 | ✅  | ✅  | ☑️  | ✅  |
-| 10 | ✅  | ☑️  |
-| 11 | ✅  | ✅  |
+| 10 | ✅  | ☑️  | ✅  | ✅  |
+| 11 | ✅  | ✅  | ✅  | ☑️  |
 | 12 | ☑️  | ✅  |
 | 13 | ✅  | ✅  |
 | 14 | ✅  | ✅  |
